@@ -1,0 +1,37 @@
+[Client] Connecting to localhost:8000...
+[SocketTCP] connect: initiating to localhost:8000
+[SocketTCP] connect: sent SYN seq=64 -> localhost:8000
+[SocketTCP] connect: received SYN-ACK seq=65 from 127.0.0.1:35977, sent ACK seq=66
+[Client] Handshake completed on client side!
+[Client] State: connected
+[Client] Current seq: 66, peer seq: 65
+[SocketTCP] send: bytes len=? starting; seq=66
+[SocketTCP] send: sending seq=66 len=2 expected_ack=68
+[SocketTCP] send: ack received seq=68
+[SocketTCP] send: sending seq=68 len=16 expected_ack=84
+[SocketTCP] send: ack received seq=84
+[Client] Test 1 sent: b'Mensje de len=16'
+[SocketTCP] send: bytes len=? starting; seq=84
+[SocketTCP] send: sending seq=84 len=2 expected_ack=86
+[SocketTCP] send: ack received seq=86
+[SocketTCP] send: sending seq=86 len=16 expected_ack=102
+[SocketTCP] send: ack received seq=102
+[SocketTCP] send: sending seq=102 len=3 expected_ack=105
+[SocketTCP] send: ack received seq=105
+[Client] Test 2 sent: b'Mensaje de largo 19'
+[SocketTCP] send: bytes len=? starting; seq=105
+[SocketTCP] send: sending seq=105 len=2 expected_ack=107
+[SocketTCP] send: ack received seq=107
+[SocketTCP] send: sending seq=107 len=16 expected_ack=123
+[SocketTCP] send: ack received seq=123
+[SocketTCP] send: sending seq=123 len=3 expected_ack=126
+[SocketTCP] send: ack received seq=126
+[Client] Test 3 sent: b'Mensaje de largo 19'
+[Client] Calling close() on localhost:8000...
+[SocketTCP] close: initiating close seq=126
+[SocketTCP] close: sent FIN seq=126
+[SocketTCP] close: sent final ACK 1/3 seq=128
+[SocketTCP] close: sent final ACK 2/3 seq=128
+[SocketTCP] close: sent final ACK 3/3 seq=128
+[Client] Connection state after close: closed
+[Client] All client tests complete!

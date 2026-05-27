@@ -1,0 +1,34 @@
+[SocketTCP] bind: listening on localhost:8000
+[Server] Listening on localhost:8000...
+[Server] Handshake completed! New connection from ('127.0.0.1', 35977)
+[Server] Server state: listening
+[Server] Connection state: connected
+[SocketTCP] recv: called with buffer_size=16, bytes_remaining=0
+[SocketTCP] recv: received length segment seq=66 payload_len=2
+[SocketTCP] recv: accepted data seq=68 len=16 buffer_len=16 last_peer_seq=84
+[SocketTCP] recv: returning 16 bytes, bytes_remaining now 0
+[Server] Test 1 received: b'Mensje de len=16'
+[Server] Test 1: Passed
+[SocketTCP] recv: called with buffer_size=19, bytes_remaining=0
+[SocketTCP] recv: received length segment seq=84 payload_len=2
+[SocketTCP] recv: accepted data seq=86 len=16 buffer_len=16 last_peer_seq=102
+[SocketTCP] recv: accepted data seq=102 len=3 buffer_len=19 last_peer_seq=105
+[SocketTCP] recv: returning 19 bytes, bytes_remaining now 0
+[Server] Test 2 received: b'Mensaje de largo 19'
+[Server] Test 2: Passed
+[SocketTCP] recv: called with buffer_size=14, bytes_remaining=0
+[SocketTCP] recv: received length segment seq=105 payload_len=2
+[SocketTCP] recv: accepted data seq=107 len=16 buffer_len=16 last_peer_seq=123
+[SocketTCP] recv: returning 14 bytes, bytes_remaining now 5
+[SocketTCP] recv: called with buffer_size=14, bytes_remaining=5
+[SocketTCP] recv: accepted data seq=123 len=3 buffer_len=5 last_peer_seq=126
+[SocketTCP] recv: returning 5 bytes, bytes_remaining now 0
+[Server] Test 3 received: b'Mensaje de largo 19'
+[Server] Test 3: Passed
+[Server] Calling recv_close() for localhost:8000...
+[SocketTCP] recv_close: waiting for FIN from peer
+[SocketTCP] recv_close: received FIN seq=126, sent FIN+ACK seq=127
+[SocketTCP] recv_close: received final ACK seq=128
+[Server] Connection state after recv_close: closed
+[Server] Final seq: 128, peer seq: 128
+[Server] All server tests complete!

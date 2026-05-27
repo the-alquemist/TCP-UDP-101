@@ -1,0 +1,39 @@
+[Client] Connecting to localhost:8033...
+[SocketTCP] connect: initiating to localhost:8033
+[SocketTCP] connect: sent SYN seq=37 -> localhost:8033
+[SocketTCP] connect: received SYN-ACK seq=38 from 127.0.0.1:48258, sent ACK seq=39
+[Client] Handshake completed on client side!
+[Client] State: connected
+[Client] Current seq: 39, peer seq: 38
+[SocketTCP] send: bytes len=? starting; seq=39
+[SocketTCP] send: sending seq=39 len=2 expected_ack=41
+[SocketTCP] send: timeout waiting for ack seq=41, retransmitting...
+[SocketTCP] send: ack received seq=41
+[SocketTCP] send: sending seq=41 len=16 expected_ack=57
+[SocketTCP] send: ack received seq=57
+[Client] Test 1 sent: b'Mensje de len=16'
+[SocketTCP] send: bytes len=? starting; seq=57
+[SocketTCP] send: sending seq=57 len=2 expected_ack=59
+[SocketTCP] send: ack received seq=59
+[SocketTCP] send: sending seq=59 len=16 expected_ack=75
+[SocketTCP] send: timeout waiting for ack seq=75, retransmitting...
+[SocketTCP] send: ack received seq=75
+[SocketTCP] send: sending seq=75 len=3 expected_ack=78
+[SocketTCP] send: ack received seq=78
+[Client] Test 2 sent: b'Mensaje de largo 19'
+[SocketTCP] send: bytes len=? starting; seq=78
+[SocketTCP] send: sending seq=78 len=2 expected_ack=80
+[SocketTCP] send: ack received seq=80
+[SocketTCP] send: sending seq=80 len=16 expected_ack=96
+[SocketTCP] send: ack received seq=96
+[SocketTCP] send: sending seq=96 len=3 expected_ack=99
+[SocketTCP] send: ack received seq=99
+[Client] Test 3 sent: b'Mensaje de largo 19'
+[Client] Calling close() on localhost:8033...
+[SocketTCP] close: initiating close seq=99
+[SocketTCP] close: sent FIN seq=99
+[SocketTCP] close: sent final ACK 1/3 seq=101
+[SocketTCP] close: sent final ACK 2/3 seq=101
+[SocketTCP] close: sent final ACK 3/3 seq=101
+[Client] Connection state after close: closed
+[Client] All client tests complete!
