@@ -87,6 +87,8 @@ python3 test_final_server.py <optional_port>
 python3 test_final_client.py <optional_host> <optional_port> < input_34.txt
 ```
 
+The client refuses to start unless stdin is redirected or piped, so the `< input_34.txt` part is required.
+
 ### Optional Test Files
 
 ```bash

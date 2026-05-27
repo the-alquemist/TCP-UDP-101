@@ -360,7 +360,7 @@ class SocketTCP:
         if self.state != "connected":
             raise RuntimeError("Socket is not connected")
 
-        timeout_seconds = 1.0
+        timeout_seconds = 1.5
         previous_timeout = self.socket.gettimeout()
         self.socket.settimeout(timeout_seconds)
 

@@ -25,6 +25,11 @@ def main():
         else:
             args.host = val
 
+    # Refuse to start unless stdin is redirected or piped.
+    if sys.stdin.isatty():
+        print("Error: provide input with '< file' or a pipe.", file=sys.stderr)
+        sys.exit(1)
+
     # Read the full input file from stdin.
     try:
         data = sys.stdin.buffer.read()
