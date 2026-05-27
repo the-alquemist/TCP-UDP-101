@@ -1,0 +1,19 @@
+[Client] Connecting to localhost:8010...
+[SocketTCP] connect: initiating to localhost:8010
+[SocketTCP] connect: sent SYN seq=42 -> localhost:8010
+[SocketTCP] connect: received SYN-ACK seq=43 from 127.0.0.1:46419, sent ACK seq=44
+[Client] Handshake completed on client side!
+[SocketTCP] send: bytes len=? starting; seq=44
+[SocketTCP] send: sending seq=44 len=2 expected_ack=46
+[SocketTCP] send: ack received seq=46
+[SocketTCP] send: sending seq=46 len=16 expected_ack=62
+[SocketTCP] send: ack received seq=62
+[SocketTCP] send: sending seq=62 len=14 expected_ack=76
+[SocketTCP] send: ack received seq=76
+[Client] Sent 30 bytes
+[SocketTCP] close: initiating close seq=76
+[SocketTCP] close: sent FIN seq=76
+[SocketTCP] close: sent final ACK 1/3 seq=78
+[SocketTCP] close: sent final ACK 2/3 seq=78
+[SocketTCP] close: sent final ACK 3/3 seq=78
+[Client] Connection closed

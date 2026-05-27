@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
 
-# Server final test script: receive a 34-byte message in two recv(17) calls.
+# Server final test script: receive a message in repeated recv(buff_size) calls.
 # Usage:
-#   python3 server.py [port]
+#   python3 test_final_server.py [port] expected_file
+# Example:
+#   python3 test_final_server.py 8000 input_34.txt
 # The matching client reads stdin and sends it through SocketTCP.
 import argparse
+import sys
 from pathlib import Path
 
 from socket_tcp import SocketTCP
 
 
 def main():
-    # Parse the optional port argument.
-    parser = argparse.ArgumentParser(description="Receive a 34-byte message in two recv(17) calls")
+    # Parse the optional port argument and optional expected filename.
+    parser = argparse.ArgumentParser(description="Receive a message in repeated recv(buff_size) calls and compare against an expected file")
     parser.add_argument("port", nargs="?", type=int, default=8000, help="Server port (default: 8000)")
+    parser.add_argument("expected_file", help="Expected input filename in project root (required)")
     args = parser.parse_args()
 
-    # Load the expected 34-byte message from the root input file.
-    expected = Path(__file__).with_name("input_34.txt").read_bytes()
+    # Load the expected message from the requested input file in the same folder as this script.
+    expected_path = Path(__file__).with_name(args.expected_file)
+    try:
+        expected = expected_path.read_bytes()
+    except Exception as e:
+        print(f"Error: could not read expected file '{expected_path}': {e}", file=sys.stderr)
+        sys.exit(1)
 
     # Create the server socket and start listening.
     server = SocketTCP()

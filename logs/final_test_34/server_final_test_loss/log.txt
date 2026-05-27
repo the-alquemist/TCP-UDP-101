@@ -1,0 +1,19 @@
+[SocketTCP] bind: listening on localhost:8224
+[Server] Listening on localhost:8224...
+[Server] Handshake completed! New connection from ('127.0.0.1', 52707)
+[SocketTCP] recv: called with buffer_size=17, bytes_remaining=0
+[SocketTCP] recv: received length segment seq=22 payload_len=2
+[SocketTCP] recv: accepted data seq=24 len=16 buffer_len=16 last_peer_seq=40
+[SocketTCP] recv: accepted data seq=40 len=16 buffer_len=32 last_peer_seq=56
+[SocketTCP] recv: returning 17 bytes, bytes_remaining now 17
+[SocketTCP] recv: called with buffer_size=17, bytes_remaining=17
+[SocketTCP] recv: duplicate data seq=40 acked
+[SocketTCP] recv: accepted data seq=56 len=2 buffer_len=17 last_peer_seq=58
+[SocketTCP] recv: returning 17 bytes, bytes_remaining now 0
+[Server] recv() was called 2 times with buff_size=17
+[Server] Received 34 bytes: b'Este archivo va en dos partes ya??'
+[Server] recv split test: Passed
+[Server] Calling recv_close() for localhost:8224...
+[SocketTCP] recv_close: waiting for FIN from peer
+[SocketTCP] recv_close: received FIN seq=58, sent FIN+ACK seq=59
+[SocketTCP] recv_close: received final ACK seq=60

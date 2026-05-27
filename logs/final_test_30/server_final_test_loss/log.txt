@@ -1,0 +1,17 @@
+[SocketTCP] bind: listening on localhost:8020
+[Server] Listening on localhost:8020...
+[Server] Handshake completed! New connection from ('127.0.0.1', 51000)
+[SocketTCP] recv: called with buffer_size=17, bytes_remaining=0
+[SocketTCP] recv: received length segment seq=52 payload_len=2
+[SocketTCP] recv: accepted data seq=54 len=16 buffer_len=16 last_peer_seq=70
+[SocketTCP] recv: accepted data seq=70 len=14 buffer_len=30 last_peer_seq=84
+[SocketTCP] recv: returning 17 bytes, bytes_remaining now 13
+[SocketTCP] recv: called with buffer_size=17, bytes_remaining=13
+[SocketTCP] recv: returning 13 bytes, bytes_remaining now 0
+[Server] recv() was called 2 times with buff_size=17
+[Server] Received 30 bytes: b'Este texto es breve y clarito.'
+[Server] recv split test: Passed
+[Server] Calling recv_close() for localhost:8020...
+[SocketTCP] recv_close: waiting for FIN from peer
+[SocketTCP] recv_close: received FIN seq=84, sent FIN+ACK seq=85
+[SocketTCP] recv_close: received final ACK seq=86

@@ -1,0 +1,29 @@
+[Client] Connecting to localhost:8224...
+[SocketTCP] connect: initiating to localhost:8224
+[SocketTCP] connect: sent SYN seq=20 -> localhost:8224
+[SocketTCP] connect: received SYN-ACK seq=21 from 127.0.0.1:52707, sent ACK seq=22
+[Client] Handshake completed on client side!
+[SocketTCP] send: bytes len=? starting; seq=22
+[SocketTCP] send: sending seq=22 len=2 expected_ack=24
+[SocketTCP] send: ack received seq=24
+[SocketTCP] send: sending seq=24 len=16 expected_ack=40
+[SocketTCP] send: ack received seq=40
+[SocketTCP] send: sending seq=40 len=16 expected_ack=56
+[SocketTCP] send: timeout waiting for ack seq=56, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=56, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=56, retransmitting...
+[SocketTCP] send: ack received seq=56
+[SocketTCP] send: sending seq=56 len=2 expected_ack=58
+[SocketTCP] send: timeout waiting for ack seq=58, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=58, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=58, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=58, retransmitting...
+[SocketTCP] send: timeout waiting for ack seq=58, retransmitting...
+[SocketTCP] send: final segment seq=56 timed out 6 times, assuming delivered
+[Client] Sent 34 bytes
+[SocketTCP] close: initiating close seq=58
+[SocketTCP] close: sent FIN seq=58
+[SocketTCP] close: sent final ACK 1/3 seq=60
+[SocketTCP] close: sent final ACK 2/3 seq=60
+[SocketTCP] close: sent final ACK 3/3 seq=60
+[Client] Connection closed

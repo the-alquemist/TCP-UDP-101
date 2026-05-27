@@ -1,0 +1,21 @@
+[Client] Connecting to localhost:8020...
+[SocketTCP] connect: initiating to localhost:8020
+[SocketTCP] connect: sent SYN seq=50 -> localhost:8020
+[SocketTCP] connect: received SYN-ACK seq=51 from 127.0.0.1:51000, sent ACK seq=52
+[Client] Handshake completed on client side!
+[SocketTCP] send: bytes len=? starting; seq=52
+[SocketTCP] send: sending seq=52 len=2 expected_ack=54
+[SocketTCP] send: timeout waiting for ack seq=54, retransmitting...
+[SocketTCP] send: detected stale SYN-ACK, resent final ACK
+[SocketTCP] send: ack received seq=54
+[SocketTCP] send: sending seq=54 len=16 expected_ack=70
+[SocketTCP] send: ack received seq=70
+[SocketTCP] send: sending seq=70 len=14 expected_ack=84
+[SocketTCP] send: ack received seq=84
+[Client] Sent 30 bytes
+[SocketTCP] close: initiating close seq=84
+[SocketTCP] close: sent FIN seq=84
+[SocketTCP] close: sent final ACK 1/3 seq=86
+[SocketTCP] close: sent final ACK 2/3 seq=86
+[SocketTCP] close: sent final ACK 3/3 seq=86
+[Client] Connection closed

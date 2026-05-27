@@ -78,7 +78,10 @@ python3 --version
 ### Run the Server Test
 
 ```bash
-python3 test_final_server.py <optional_port>
+python3 test_final_server.py <port> <expected_file>
+# Examples:
+# python3 test_final_server.py 8000 input_34.txt
+# python3 test_final_server.py 8010 input_30.txt
 ```
 
 ### Run the Client Test
